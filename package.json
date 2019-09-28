@@ -1,0 +1,27 @@
+{
+  "name": "fala-campeao",
+  "version": "1.0.0",
+  "description": "POC de um serviço que gera nomes de garçons aleatórios em modo API rest. Baseado em https://twitter.com/NomesGarcom :nerd_face:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcos-paiva/fala-campeao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcos-paiva/fala-campeao/issues"
+  },
+  "homepage": "https://github.com/marcos-paiva/fala-campeao#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
