@@ -1,3 +1,7 @@
+const {getAdjectives, getPronoums, getPrefix} = require('../phrases');
+
+console.log( getPrefix('masc') );
+
 module.exports = {
 
     // Phrase model
