@@ -1,35 +1,22 @@
-/**
- *
- *
- * @export
- * @param {string} gender
- * @returns {array} // Masc or Fem array with pronoums
- */
-export function getPronoums(gender) {
+const getPronoums = (gender) => {
     const mascPronoums = [
         'meu',
         'nosso'
-    ];
+    ]
 
     const femPronoums = [
         'minha',
         'nossa'
-    ];
+    ]
 
     if (gender == 'masc') {
         return mascPronoums;
     } else {
         return femPronoums;
     }
-}
+};
 
-/**
- *
- *
- * @export
- * @returns {array} // With possible prefixes
- */
-export function getPrefix() {
+const getPrefix = () =>  {
     const preffix = [
         'Fala',
         'Opa',
@@ -39,16 +26,9 @@ export function getPrefix() {
     ];
 
     return preffix;
-}
+};
 
-/**
- *
- *
- * @export
- * @param {string} gender
- * @returns {array} // Masc or Fem with adjectives
- */
-export function getAdjectives(gender) {
+const getAdjectives = (gender) => {
     const mascAdjectives = [
         'Campeão',
         'Federal',
@@ -72,7 +52,7 @@ export function getAdjectives(gender) {
         'Influencer',
         'Desbravador',
         'Tupi-guarani',
-        'Sensei',
+        'Sensei'
     ];
 
     const femAdjectives = [
@@ -98,12 +78,18 @@ export function getAdjectives(gender) {
         'Influencer',
         'Desbravadora',
         'Tupi-guarani',
-        'Sensei',
-    ];
+        'Sensei'
+    ]
 
     if (gender == 'masc') {
         return mascAdjectives;
     } else {
         return femAdjectives;
     }
+};
+
+module.exports = {
+    getPrefix,
+    getPronoums,
+    getAdjectives
 }
