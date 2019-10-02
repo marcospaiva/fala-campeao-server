@@ -1,6 +1,8 @@
+const {randomizeArray} = require('../helpers');
 const {getAdjectives, getPronoums, getPrefix} = require('../phrases');
 
-console.log( getPrefix('masc') );
+
+
 
 module.exports = {
 
@@ -8,6 +10,9 @@ module.exports = {
     // Prefix + Pronoum [fem | masc] + adjective;
 
     show(req, res) {
-        res.send('Hello world');
+
+        let randomPhrase = `${randomizeArray(getPrefix('masc'))}, ${randomizeArray(getPronoums('masc'))} ${randomizeArray(getAdjectives('masc'))}`;
+
+        res.json(randomPhrase);
     }
 };

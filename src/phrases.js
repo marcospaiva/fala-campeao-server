@@ -1,12 +1,9 @@
 const getPronoums = (gender) => {
     const mascPronoums = [
-        'meu',
-        'nosso'
-    ]
+        'meu'    ]
 
     const femPronoums = [
-        'minha',
-        'nossa'
+        'minha'
     ]
 
     if (gender == 'masc') {
