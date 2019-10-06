@@ -3,4 +3,5 @@ const app = express();
 
 app.use('/api', require('./src/routes'))
 
-app.listen(3001);
+let port = process.env.PORT || 8080;
+app.listen(port);
