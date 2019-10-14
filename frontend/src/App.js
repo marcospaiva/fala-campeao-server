@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import Header from './Header';
 import Phrase from './Phrase';
+import SharingButtons from './SharingButtons';
 import Footer from './Footer';
 import api from './Api';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
 
@@ -24,6 +26,7 @@ function App() {
     <section className="app">
       <Header />
       <Phrase phrase={phrase} />
+      <SharingButtons />
       <Footer />
     </section>
   );
