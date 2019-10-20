@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import Header from './Header';
+import Phrase from './Phrase';
 import api from './Api';
 
 function App() {
@@ -18,7 +20,10 @@ function App() {
 
 
   return (
-    <h1> <span role="img" aria-label="beer">🍻</span> {phrase}</h1>
+    <section className="app">
+      <Header />
+      <Phrase phrase={phrase} />
+    </section>
   );
 }
 
