@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Header from './Header';
 import Phrase from './Phrase';
+import Footer from './Footer';
 import api from './Api';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <section className="app">
       <Header />
       <Phrase phrase={phrase} />
+      <Footer />
     </section>
   );
 }
