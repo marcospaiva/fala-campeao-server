@@ -1,9 +1,55 @@
 @custom-media --viewport-medium (width <= 50rem);
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
+
 :root {
-    --fontSize: 1rem;
-    --mainColor: #12345678;
-    --secondaryColor: lab(32.5 38.5 -47.6 / 90%);
+    --fontSize: 1.8rem;
+    --mainColor: #0f2b47;
+    --secondaryColor: #fff;
+    --baseline: 30px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden auto;
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+    font-family: system-ui;
+    font-size: var(--fontSize);
+    line-height: calc(var(--fontSize) * 1.5);
+    overflow-wrap: break-word;
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+:--heading {
+    padding: var(--baseline);
+}
+
+a {
+    color: rgb(0 0 100% / 90%);
+
+    &:hover {
+        color: rebeccapurple;
+    }
+}
+
+header {
+    h1 {
+        font-size: 1rem;
+        padding: var(--baseline);
+    }
+}
