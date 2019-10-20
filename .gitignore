@@ -70,3 +70,5 @@ package-lock.json
 
 .DS_Store
 */.DS_Store
+
+src/index.css
