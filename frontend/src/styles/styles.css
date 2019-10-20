@@ -4,6 +4,7 @@
 
 :root {
     --fontSize: 1.8rem;
+    --fontSizeMin: .8rem;
     --mainColor: #0f2b47;
     --secondaryColor: #fff;
     --baseline: 30px;
@@ -40,7 +41,7 @@ body {
 }
 
 a {
-    color: rgb(0 0 100% / 90%);
+    color: var(--white);
 
     &:hover {
         color: rebeccapurple;
@@ -51,5 +52,13 @@ header {
     h1 {
         font-size: 1rem;
         padding: var(--baseline);
+    }
+}
+
+footer {
+    margin: var(--baseline);
+
+    p {
+        font-size: var(--fontSizeMin);
     }
 }
