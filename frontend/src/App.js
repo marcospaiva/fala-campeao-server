@@ -18,7 +18,7 @@ function App() {
 
 
   return (
-    <h1> 🍻 {phrase}</h1>
+    <h1> <span role="img" aria-label="beer">🍻</span> {phrase}</h1>
   );
 }
 
