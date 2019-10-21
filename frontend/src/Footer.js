@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Header is a stateless component
 const Footer = () => {
     return (
         <footer>
