@@ -1,0 +1,33 @@
+.sharing-wrapper {
+
+    display: flex;
+    margin-left: var(--baseline);
+
+    .btn {
+        display: inline-flex;
+        width: 50px;
+        height: 50px;
+        margin-right: var(--baseline);
+        border-radius: 50px;
+        padding: 10px;
+
+        &:hover,
+        &:focus {
+            background-color: var(--secondaryColor);
+
+            svg {
+                fill: var(--mainColor);
+            }
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: var(--secondaryColor);
+        }
+
+        span {
+            display: none;
+        }
+    }
+}
