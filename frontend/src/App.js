@@ -8,7 +8,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
 
-  const [phrase, setPhrase ] = useState([]);
+  const [phrase, setPhrase] = useState([]);
 
   useEffect( () => {
     async function loadPhrases(){
@@ -26,7 +26,7 @@ function App() {
     <section className="app">
       <Header />
       <Phrase phrase={phrase} />
-      <SharingButtons />
+      <SharingButtons phrase={phrase} />
       <Footer />
     </section>
   );
