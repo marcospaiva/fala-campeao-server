@@ -4,10 +4,8 @@
   "description": "POC de um serviço que gera nomes de garçons aleatórios em modo API rest. Baseado em https://twitter.com/NomesGarcom :nerd_face:",
   "main": "server.js",
   "scripts": {
-    "dev-client": "cd frontend/ && npm run start",
-    "dev-all": "nodemon server/server.js && cd frontend/ && npm run start",
     "deploy": "https://www.freecodecamp.org/news/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0/",
-    "dev-back": "nodemon server/server.js --ignore frontend/"
+    "local": "nodemon server/server.js --ignore frontend/"
   },
   "repository": {
     "type": "git",
