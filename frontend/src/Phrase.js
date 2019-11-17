@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Phrase is a normal component that recieve a app state as a prop.
+// Phrase is a normal component that recieve an app state as a prop.
 class Phrase extends React.Component{
     render() {
         return(
