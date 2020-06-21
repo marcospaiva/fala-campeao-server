@@ -7,11 +7,19 @@ module.exports = {
     // Prefix + Pronoum [fem | masc] + adjective;
 
     show(req, res) {
+        const genderByQueryParam = req.query.gender == 'f' ? 'fem' : 'masc';
+        const otherGenderByQueryParam = req.query.gender == 'f' ? 'masc' : 'fem';
+        const adjective = randomizeArray(getAdjectives( genderByQueryParam ));
+        const prefix = randomizeArray(getPrefix( genderByQueryParam ));
+        const pronoum = randomizeArray(getPronoums( genderByQueryParam ));
+        const otherGenderAdjective = randomizeArray(getAdjectives( otherGenderByQueryParam ));
+        const randomPhrase = `${prefix}, ${pronoum} ${adjective}`;
 
-        let genderByQueryParam = req.query.gender == 'f' ? 'fem' : 'masc';
+        const greeting = {}
+        greeting.phrase = randomPhrase
+        greeting.adjective = adjective;
+        greeting.otherGender = otherGenderAdjective;
 
-        let randomPhrase = `${randomizeArray(getPrefix( genderByQueryParam ))}, ${randomizeArray(getPronoums( genderByQueryParam ))} ${randomizeArray(getAdjectives( genderByQueryParam ))}`;
-
-        res.json(randomPhrase);
+        res.json(greeting);
     }
 };
