@@ -17,8 +17,7 @@ const getPrefix = () =>  {
     const preffix = [
         'Fala',
         'Opa',
-        'Oi',
-        'Hello'
+        'Oi'
     ];
 
     return preffix;
