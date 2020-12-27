@@ -2,7 +2,7 @@
 
 Expressões aleatórias para chamar o garçom, inspiradas em https://twitter.com/NomesGarcom :nerd_face:
 
-Para rodar localmente:
+Local:
 
 1. `npm install`
 2. `npm run dev`
